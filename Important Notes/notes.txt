@@ -1,0 +1,20 @@
+1. STATELESS FUNCTION COMPONENT - JS Functions
+function Welcome(props) {
+    return <h1>Hello, ${props.name} </h1>
+}
+2. STATE FUNCTION COMPONENT - Class
+It extends components class
+Render method returning HTML
+
+class Welcome extends React.Component {
+    render() {
+        return <h1>Hello, {props.name}</h1>
+    }
+}
+
+3. props are immutable i.e cannot be changed.
+4. Dont modify state directly by this.state.abc = "";, use setState.
+5. Use callback function to do any task after setState as it is asynchornous.
+6. To update state based on previous state, pass function as an argument instead of an object.
+7. Event handler is a function and not a functional call.
+8. In fragments only key attribute can be passed.
