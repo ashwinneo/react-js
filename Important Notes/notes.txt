@@ -18,3 +18,7 @@ class Welcome extends React.Component {
 6. To update state based on previous state, pass function as an argument instead of an object.
 7. Event handler is a function and not a functional call.
 8. In fragments only key attribute can be passed.
+9. Pure component doesn't re-render but Regular component re-renders.
+10. Parent component re-render, child component doesn't re-render.
+11. In pure component don't push an object to an existing array as it won't re-render, only return a new array with the new value.
+12. Pure Component is for class based component, where as Memo component is for function based component.

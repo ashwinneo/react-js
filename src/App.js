@@ -1,8 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { Component } from 'react';
+import ForwardRefParentInput from './components/AdvancedReact/Refs/ForwardRefParentInput';
+// import FocusInput from './components/AdvancedReact/Refs/FocusInput';
+// import Input from './components/AdvancedReact/Refs/Input';
 // import PureComponent from './components/AdvancedReact/PureComponents/PureComponent';
-import ParentComponent from './components/AdvancedReact/PureComponents/ParentComponent';
+// import ParentComponent from './components/AdvancedReact/PureComponents/ParentComponent';
+// import RefsDemo from './components/AdvancedReact/Refs/RefsDemo';
 // import Table from './components/AdvancedReact/Fragments/Table';
 // import FragmentDemo from './components/AdvancedReact/Fragments/FragmentDemo';
 // import LifeCycleA from './components/LifeCycle/LifeCycleA';
@@ -80,7 +84,11 @@ class App extends Component {
         {/* <FragmentDemo/> */}
         {/* <Table/> */}
         {/* <PureComponent/> */}
-        <ParentComponent/>
+        {/* <ParentComponent/> */}
+        {/* <RefsDemo/> */}
+        {/* <Input/> */}
+        {/* <FocusInput/> */}
+        <ForwardRefParentInput/>
       </div>
     )
   }
