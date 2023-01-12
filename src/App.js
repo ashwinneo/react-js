@@ -1,7 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { Component } from 'react';
-import ForwardRefParentInput from './components/AdvancedReact/Refs/ForwardRefParentInput';
+import PostForm from './components/AdvancedReact/HTTP/PostForm';
+// import PostList from './components/AdvancedReact/HTTP/PostList';
+// import ComponentC from './components/AdvancedReact/Context/ComponentC';
+// import { UserProvider } from './components/AdvancedReact/Context/UserContext';
+// import ClickCounterTwo from './components/AdvancedReact/RenderProps/ClickCounterTwo';
+// import HoverCounterTwo from './components/AdvancedReact/RenderProps/HoverCounterTwo';
+// import User from './components/AdvancedReact/RenderProps/User';
+// import Counter from './components/AdvancedReact/RenderProps/Counter';
+// import ClickCounter from './components/AdvancedReact/HigherOrderComponent/ClickCounter';
+// import HoverCounter from './components/AdvancedReact/HigherOrderComponent/HoverCounter';
+// import Hero from './components/AdvancedReact/ErrorHandling/Hero';
+// import ErrorBoundary from './components/AdvancedReact/ErrorHandling/ErrorBoundary';
+// import PortalDemo from './components/AdvancedReact/Portals/PortalDemo';
+// import ForwardRefParentInput from './components/AdvancedReact/Refs/ForwardRefParentInput';
 // import FocusInput from './components/AdvancedReact/Refs/FocusInput';
 // import Input from './components/AdvancedReact/Refs/Input';
 // import PureComponent from './components/AdvancedReact/PureComponents/PureComponent';
@@ -29,28 +42,28 @@ import ForwardRefParentInput from './components/AdvancedReact/Refs/ForwardRefPar
 
 // function App() {
 //   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
+// <div className="App">
+//   <header className="App-header">
+//     <img src={logo} className="App-logo" alt="logo" />
+//     <p>
+//       Edit <code>src/App.js</code> and save to reload.
+//     </p>
+//     <a
+//       className="App-link"
+//       href="https://reactjs.org"
+//       target="_blank"
+//       rel="noopener noreferrer"
+//     >
+//       Learn React
+//     </a>
+//   </header>
+// </div>
 //   );
 // }
 
 class App extends Component {
   render() {
-    return(
+    return (
       <div className="App">
         <img src={logo} className="App-logo" alt="logo" />
         {/* <FunctionalComponent name="Ashwin" heroName='Dad'>
@@ -88,7 +101,34 @@ class App extends Component {
         {/* <RefsDemo/> */}
         {/* <Input/> */}
         {/* <FocusInput/> */}
-        <ForwardRefParentInput/>
+        {/* <ForwardRefParentInput/>/ */}
+        {/* <PortalDemo/> */}
+        {/* <ErrorBoundary>
+          <Hero heroName="Batman"/>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName="Superman"/>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName="Joker"/>
+        </ErrorBoundary> */}
+        {/* <ClickCounter name='Ashwin'/>
+        <HoverCounter/> */}
+        {/* <ClickCounterTwo/>
+        <HoverCounterTwo/>
+        <User render={(isLoggedIn) =>  isLoggedIn? 'Ashwin' : 'Guest'}/> */}
+        {/* <Counter render={ (count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount={incrementCount}/>
+        )}/>
+
+        <Counter render={ (count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount}/>
+        )}/> */}
+        {/* <UserProvider value='Ashwin'>
+          <ComponentC />
+        </UserProvider> */}
+        {/* <PostList/> */}
+        <PostForm/>
       </div>
     )
   }

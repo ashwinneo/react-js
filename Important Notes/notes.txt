@@ -22,3 +22,7 @@ class Welcome extends React.Component {
 10. Parent component re-render, child component doesn't re-render.
 11. In pure component don't push an object to an existing array as it won't re-render, only return a new array with the new value.
 12. Pure Component is for class based component, where as Memo component is for function based component.
+13. Portals will create the dom element outside of App dom.
+14. Error boundary catches error during rendering, lifecycle methods, constructors of whole tree below them, but does not catch errors from eventHandlers, please use try, catch...
+15. HOC to share common functionalites with all components without the need of repeating the function in all components.
+16. 
