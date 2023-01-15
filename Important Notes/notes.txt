@@ -25,4 +25,6 @@ class Welcome extends React.Component {
 13. Portals will create the dom element outside of App dom.
 14. Error boundary catches error during rendering, lifecycle methods, constructors of whole tree below them, but does not catch errors from eventHandlers, please use try, catch...
 15. HOC to share common functionalites with all components without the need of repeating the function in all components.
-16. 
+16. useState can accept any input type(integer,string,array,object) etc.
+17. useEffect will be called only after all the renders are completed.
+18. To conditionally render a component useEffect(,[props or state]).

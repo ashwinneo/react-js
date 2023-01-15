@@ -1,7 +1,53 @@
 import logo from './logo.svg';
 import './App.css';
-import React, { Component } from 'react';
-import PostForm from './components/AdvancedReact/HTTP/PostForm';
+import React, {Component} from 'react';//createContext, useReducer, createContext, Component
+// import ParentComponent from './ReactHooks/components/UseCallback/ParentComponent';
+// import UseReduceDataFetching from './ReactHooks/components/UseReducers/DataFetch/UseReduceDataFetching';
+// import DataFetchingOne from './ReactHooks/components/UseReducers/DataFetch/UseEffectUseStateDataFetchingOne';
+
+// import ComponentC from './ReactHooks/components/UseReducerWithUseContext/ComponentC';
+// import ComponentB from './ReactHooks/components/UseReducerWithUseContext/ComponentB';
+// import ComponentA from './ReactHooks/components/UseReducerWithUseContext/ComponentA';
+
+// export const CountContext = createContext();
+
+// const initialState = 0;
+// const reducer = (state, action) => {
+//   console.log("State", state)
+//   switch (action) {
+//     case 'increment':
+//       return state + 1
+//     case 'decrement':
+//       return state - 1
+//     case 'reset':
+//       return initialState
+//     default:
+//       return state
+//   }
+// };
+
+
+// import CounterThree from './ReactHooks/components/UseReducers/CounterThree';
+// import CounterTwo from './ReactHooks/components/UseReducers/CounterTwo';
+// import CounterOne from './ReactHooks/components/UseReducers/CounterOne';
+// import ComponentC from './ReactHooks/components/UseContext/ComponentC';
+
+// export const UserContext = createContext();
+// export const ChannelContext = createContext();
+
+// import DataFetching from './ReactHooks/components/UseHookFetch/DataFetching';
+// import UseIntervalHookCounter from './ReactHooks/components/UseEffect/UseIntervalHookCounter';
+// import ClassIntervalCounter from './ReactHooks/components/UseEffect/ClassIntervalCounter';
+// import UseMouseContainer from './ReactHooks/components/UseEffect/UseMouseContainer';
+// import ClassMouse from './ReactHooks/components/UseEffect/ClassMouse';
+// import UseHookMouse from './ReactHooks/components/UseEffect/UseHookMouse';
+// import HookCounter1 from './ReactHooks/components/UseEffect/UseCounterInteger';
+// import ClassCounter1 from './ReactHooks/components/UseEffect/ClassCounter1';
+// import HookCounter4 from './ReactHooks/components/UseState/UseStateArray';
+// import HookCounterThree from './ReactHooks/components/UseState/HookCounterThree';
+// import ClassCounter from './ReactHooks/components/UseState/ClassCounter';
+// import HookCounterTwo from './ReactHooks/components/UseState/HookCounterTwo';
+// import PostForm from './components/AdvancedReact/HTTP/PostForm';
 // import PostList from './components/AdvancedReact/HTTP/PostList';
 // import ComponentC from './components/AdvancedReact/Context/ComponentC';
 // import { UserProvider } from './components/AdvancedReact/Context/UserContext';
@@ -41,23 +87,24 @@ import PostForm from './components/AdvancedReact/HTTP/PostForm';
 // import SetState from './components/state/SetState';
 
 // function App() {
+//   // const [count, dispatch] = useReducer(reducer, initialState);
 //   return (
-// <div className="App">
-//   <header className="App-header">
-//     <img src={logo} className="App-logo" alt="logo" />
-//     <p>
-//       Edit <code>src/App.js</code> and save to reload.
-//     </p>
-//     <a
-//       className="App-link"
-//       href="https://reactjs.org"
-//       target="_blank"
-//       rel="noopener noreferrer"
-//     >
-//       Learn React
-//     </a>
-//   </header>
-// </div>
+//     // <CountContext.Provider
+//     //   value={{ countState: count, countDispatch: dispatch }}
+//     // >
+//       <div className="App">
+//         <img src={logo} className="App-logo" alt="logo" />
+//         {/* <header className="App-header">
+//         </header> */}
+//         {/* Count - {count}
+//         <ComponentA />
+//         <ComponentB />
+//         <ComponentC /> */}
+//         {/* <DataFetchingOne/> */}
+//         {/* <UseReduceDataFetching/> */}
+//         {/* <ParentComponent/> */}
+//       </div>
+//     // </CountContext.Provider>
 //   );
 // }
 
@@ -128,7 +175,31 @@ class App extends Component {
           <ComponentC />
         </UserProvider> */}
         {/* <PostList/> */}
-        <PostForm/>
+        {/* <PostForm/> */}
+
+
+        {/* REACT HOOKS */}
+        {/* <ClassCounter/>*/}
+        {/*<HookCounterTwo/> */}
+        {/* <HookCounterThree/> */}
+        {/* <HookCounter4/> */}
+        {/* <ClassCounter1/> */}
+        {/* <HookCounter1/> */}
+        {/* <ClassMouse/> */}
+        {/* <UseHookMouse/> */}
+        {/* <UseMouseContainer/> */}
+        {/* <ClassIntervalCounter/>
+          <UseIntervalHookCounter/> */}
+        {/* <DataFetching/> */}
+        {/* <UserContext.Provider value="Ashwin">
+          <ChannelContext.Provider value="Ronaldo">
+            <ComponentC />
+          </ChannelContext.Provider>
+        </UserContext.Provider> */}
+        {/* <CounterOne/> */}
+        {/* <CounterTwo/> */}
+        {/* <CounterThree/> */}
+        {/* REACT HOOKS */}
       </div>
     )
   }
