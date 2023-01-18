@@ -9,35 +9,44 @@ import './App.css';
 // import { Button } from './components/Props/Advanced Props/Event/Button';
 // import { Input } from './components/Props/Advanced Props/Event/Input';
 // import { Greet } from './components/Props/Greet';
-import { Person } from './components/Props/Person';
-import { PersonList } from './components/Props/PersonList';
+// import { Person } from './components/Props/Person';
+// import { PersonList } from './components/Props/PersonList';
+// import { LoggedIn } from './components/Hooks/UseState/LoggedIn';
+// import { User } from './components/Hooks/UseState/User';
+// import Counter from './components/Hooks/UseReducer/Counter';
+// import { Box } from './components/Hooks/UseContext/Box';
+// import { ThemeContextProvider } from './components/Hooks/UseContext/ThemeContext';
+import { UserContextProvider } from './components/Hooks/UseContext/UserContext';
+import { User } from './components/Hooks/UseContext/User';
 
 function App() {
-  const personName = {
-    first: 'Cristiano',
-    last: 'Ronaldo '
-  };
+  // const personName = {
+  //   first: 'Cristiano',
+  //   last: 'Ronaldo '
+  // };
 
-  const nameList = [
-    {
-      first: 'Cristiano',
-      last: 'Ronaldo'
-    },
-    {
-      first: 'David',
-      last: 'Beckam'
-    },
-    {
-      first: 'Frank',
-      last: 'Lampard'
-    }
-  ];
+  // const nameList = [
+  //   {
+  //     first: 'Cristiano',
+  //     last: 'Ronaldo'
+  //   },
+  //   {
+  //     first: 'David',
+  //     last: 'Beckam'
+  //   },
+  //   {
+  //     first: 'Frank',
+  //     last: 'Lampard'
+  //   }
+  // ];
   return (
     <div className="App">
-      <img src={logo} className="App-logo" alt="logo" />
+      <header>
+        <img src={logo} className="App-logo" alt="logo" />
+      </header>
       {/* <Greet name='Ashwin' messageCount={20} isLoggedIn={true} />*/}
-      <Person name={personName} />
-      <PersonList names={nameList}/> 
+      {/* <Person name={personName} />
+      <PersonList names={nameList}/>  */}
       {/* <Status status='success'/>
       <Heading>Header</Heading>
       <Oscar>
@@ -54,6 +63,15 @@ function App() {
         console.log(event.target.value);
       }}/> */}
       {/* <Container styles={{ border: '2px solid #909ece', padding: '1rem' }}/> */}
+      {/* <LoggedIn/>
+      <User/> */}
+      {/* <Counter /> */}
+      {/* <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider> */}
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
     </div>
   );
 }
