@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import React, {Component} from 'react';//createContext, useReducer, createContext, Component
+import APIV4 from './ReactHooks/rest-api-calls/APIV4/APIV4';
+// import APIV3 from './ReactHooks/rest-api-calls/APIV3/APIV3';
+// import APIV1 from './ReactHooks/rest-api-calls/APIV1';
+// import APIV2 from './ReactHooks/rest-api-calls/APIV2';
 // import ParentComponent from './ReactHooks/components/UseCallback/ParentComponent';
 // import UseReduceDataFetching from './ReactHooks/components/UseReducers/DataFetch/UseReduceDataFetching';
 // import DataFetchingOne from './ReactHooks/components/UseReducers/DataFetch/UseEffectUseStateDataFetchingOne';
@@ -199,6 +203,11 @@ class App extends Component {
         {/* <CounterOne/> */}
         {/* <CounterTwo/> */}
         {/* <CounterThree/> */}
+
+        {/* <APIV1/> */}
+        {/* <APIV2/> */}
+        {/* <APIV3/> */}
+        <APIV4/>
         {/* REACT HOOKS */}
       </div>
     )
